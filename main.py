@@ -177,7 +177,7 @@ async def handle_photo(message: Message) -> None:
             "🧠 Loading AI model (u2net)\n"
             "⚡ Removing background with precision\n"
             "🎨 Creating high-quality transparent PNG\n"
-            "⏱️ Please wait 15-60 seconds..."
+            "⏱️ Please wait 5-15 seconds..."
         )
         
         # Get the largest photo size for best quality
