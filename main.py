@@ -3,7 +3,6 @@ import asyncio
 import logging
 from io import BytesIO
 from typing import Any, Dict
-from config import TOKEN
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.client.default import DefaultBotProperties
@@ -24,7 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Get token from environment variable (IMPORTANT for hosting)
-BOT_TOKEN = os.getenv(TOKEN)
+BOT_TOKEN = os.getenv(BOT_TOKEN)
 
 if not BOT_TOKEN:
     logger.error("❌ BOT_TOKEN environment variable not set!")
