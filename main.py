@@ -37,7 +37,7 @@ dp = Dispatcher()
 
 # Initialize background removal session with lightweight model for hosting
 try:
-    bg_session = new_session('u2net')  # Best balance of quality and speed
+    bg_session = new_session('u2netp')  # Best balance of quality and speed
     logger.info("✅ AI model loaded successfully")
 except Exception as e:
     logger.error(f"❌ Failed to load AI model: {e}")
